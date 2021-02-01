@@ -2,7 +2,7 @@
 
 This is based on starter template for [Learn Next.js](https://nextjs.org/learn) but using some customizations to play with this framework 🚀. My first experience with Next.js, so let's do crazy things!
 
-Demo: TBD
+Demo: https://simple-blog-nextjs-three.vercel.app
 
 ## Built with
 
