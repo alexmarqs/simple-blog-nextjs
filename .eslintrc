@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [["@", "."]],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+      }
+    }
+  },
+  "extends": ["nextjs"],
+  "rules": {
+    "prettier/prettier": 0
+  }
+}
