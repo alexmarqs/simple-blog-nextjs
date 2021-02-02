@@ -3,9 +3,6 @@ import { getAbsoluteURL } from '@/lib/utils';
 
 export default async function(req, res) {
   try {
-    await playwright.loadFont(
-      'https://raw.githack.com/googlei18n/noto-emoji/master/fonts/NotoColorEmoji.ttf'
-    );
     // Start the browser with the AWS Lambda wrapper (playwright-aws-lambda)
     const browser = await playwright.launchChromium();
     // Create a page with the Open Graph image size best practise

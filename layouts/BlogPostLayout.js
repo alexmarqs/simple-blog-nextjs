@@ -58,7 +58,7 @@ const PostHeader = ({ dateStr, author, readTime, id }) => {
       </div>
       <p className="mt-1 md:mt-0">
         {readTime.text}
-        {` • `}
+        <span className="ml-2 mr-2">•</span>
         <ViewCounter slug={id} />
       </p>
     </div>
