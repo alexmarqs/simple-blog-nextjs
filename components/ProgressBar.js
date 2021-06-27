@@ -25,7 +25,7 @@ const ProgressBar = () => {
       router.events.off('routeChangeComplete', done);
       router.events.off('routeChangeError', done);
     };
-  }, []);
+  }, [router.events]);
 
   return <></>;
 };

@@ -1,14 +1,7 @@
 {
-  "settings": {
-    "import/resolver": {
-      "alias": {
-        "map": [["@", "."]],
-        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
-      }
-    }
-  },
-  "extends": ["nextjs"],
+  "extends": ["next", "prettier"],
+  "root": true,
   "rules": {
-    "prettier/prettier": 0
+    "import/no-anonymous-default-export": "off"
   }
 }
