@@ -1,11 +1,12 @@
 import * as playwright from 'playwright-aws-lambda';
 import { getAbsoluteURL } from '@/lib/utils';
 
-export default async function(req, res) {
+export default async function (req, res) {
   try {
     // Start the browser with the AWS Lambda wrapper (playwright-aws-lambda)
     const browser = await playwright.launchChromium();
     // Create a page with the Open Graph image size best practise
+
     const page = await browser.newPage({
       viewport: {
         width: 1200,

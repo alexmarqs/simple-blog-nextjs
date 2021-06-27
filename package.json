@@ -2,12 +2,12 @@
   "name": "example-blog-with-nextjs",
   "description": "Example of a blog built with Next.js",
   "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint:fix": "eslint --fix --ext .js .",
-    "format": "prettier --write **/*.{js,md}"
+    "lint": "next lint"
   },
   "license": "MIT",
   "dependencies": {
@@ -16,8 +16,7 @@
     "date-fns": "^2.16.1",
     "firebase-admin": "^9.4.2",
     "gray-matter": "^4.0.2",
-    "next": "10.0.5",
-    "next-google-fonts": "^1.2.1",
+    "next": "latest",
     "next-seo": "^4.17.0",
     "nprogress": "^0.2.0",
     "playwright-aws-lambda": "^0.6.0",
@@ -25,9 +24,8 @@
     "postcss": "^8.2.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
-    "preact": "^10.5.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "reading-time": "^1.2.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
@@ -36,18 +34,19 @@
     "typed.js": "^2.0.11"
   },
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-nextjs": "^1.0.6",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-html": "^5.0.5",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "prettier": "^1.19.1"
+    "eslint": "^7.8.0",
+    "eslint-config-next": "^11.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|md)": "prettier --write --ignore-unknown"
   }
 }

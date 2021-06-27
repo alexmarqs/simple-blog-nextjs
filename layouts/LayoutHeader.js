@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useIsRoot } from '@/hooks/useIsRoot';
+import avatar from '../public/avatar.jpg';
 
 const LayoutHeader = () => {
   const title = 'Digital Garden,';
@@ -12,11 +13,12 @@ const LayoutHeader = () => {
       <Link href="/">
         <a>
           <Image
-            src="/avatar.jpg"
+            src={avatar}
             alt="Picture of the author"
             width={imgSize}
             height={imgSize}
             quality={45}
+            placeholder="blur"
             priority
             className="rounded-full"
           />

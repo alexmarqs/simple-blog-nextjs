@@ -9,7 +9,7 @@ const Typing = ({ options }) => {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, [options]);
 
   return (
     <>

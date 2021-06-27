@@ -1,12 +1,12 @@
 # Simple Blog using Next.js
 
-This is based on starter template for [Learn Next.js](https://nextjs.org/learn) but using some customizations to play with this framework 🚀. My first experience with Next.js, so let's do crazy things!
+This is based on starter template for [Learn Next.js](https://nextjs.org/learn) but using some customizations 🚀.
 
 Demo: https://simple-blog-nextjs-three.vercel.app
 
 ## Built with
 
-- 🔥 [Next.js](https://nextjs.org) v10 (usage of [next/image](https://nextjs.org/docs/api-reference/next/image), a built-in Image Component and Automatic Image Optimization)
+- 🔥 [Next.js](https://nextjs.org) v11!
 - 🔥 [Cloud Firestore](https://firebase.google.com/docs/firestore) (Firebase) via Next.js API route to implement real time count views mechanism. **Note:** _Once you choose a region for your database, select the same location for your Serverless Function Region. This will minimize latency between your Serverless Function and your database, improving performance_
 - 🎨 [Tailwind CSS](https://tailwindcss.com) integration for styling
 - ✏️ Linter with [ESLint](https://eslint.org)
