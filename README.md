@@ -17,8 +17,6 @@ Demo: https://simple-blog-nextjs-three.vercel.app
 - ⌛ [NProgress](NProgress.js) progress bar to convince the users that something is happening
 - 📝 SSG (Static Site Generation) pre-rendering from Next.js to parse blog markdown files during build time
 - 💥 [SWR](https://swr.vercel.app/) React hook lib for remote data fetching, it first returns the data from cache (stale) and then sends the fetch request (revalidate)
-- Custom google fonts using [next-google-fonts](https://github.com/joe-bell/next-google-fonts)
-- Replace React with Preact in client production build (https://blogify.dev/egoist/how-i-made-my-next-js-build-50-percent-smaller)
 
 ## Running Locally
 
