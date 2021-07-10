@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pre-commit": "yarn lint && yarn lint-staged"
+    "pre-commit": "yarn lint && yarn lint-staged",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "dependencies": {
